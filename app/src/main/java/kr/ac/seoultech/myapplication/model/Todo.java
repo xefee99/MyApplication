@@ -1,8 +1,9 @@
 package kr.ac.seoultech.myapplication.model;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class Todo {
+public class Todo implements Serializable {
 
     private Long id;
     private String title;

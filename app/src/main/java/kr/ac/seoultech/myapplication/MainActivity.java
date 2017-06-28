@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity
         findViewById(R.id.btn2).setOnClickListener(this);
         findViewById(R.id.btn_login).setOnClickListener(this);
         findViewById(R.id.btn_simple_list).setOnClickListener(this);
+        findViewById(R.id.btn_todo_list).setOnClickListener(this);
 
     }
 
@@ -82,6 +83,11 @@ public class MainActivity extends AppCompatActivity
 
             case R.id.btn_simple_list : {
                 startActivity(new Intent(this, SimpleListActivity.class));
+                break;
+            }
+
+            case R.id.btn_todo_list : {
+                startActivity(new Intent(this, TodoListActivity.class));
                 break;
             }
 

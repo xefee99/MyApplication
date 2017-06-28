@@ -18,7 +18,10 @@
         </activity>
         <activity android:name=".SubActivity" />
         <activity android:name=".LoginActivity" />
-        <activity android:name=".SimpleListActivity"></activity>
+        <activity android:name=".SimpleListActivity" />
+        <activity android:name=".TodoListActivity" />
+        <activity android:name=".TodoAddActivity" />
+        <activity android:name=".TodoDetailActivity"></activity>
     </application>
 
 </manifest>
