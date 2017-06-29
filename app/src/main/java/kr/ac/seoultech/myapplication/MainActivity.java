@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity
         findViewById(R.id.btn_login).setOnClickListener(this);
         findViewById(R.id.btn_simple_list).setOnClickListener(this);
         findViewById(R.id.btn_todo_list).setOnClickListener(this);
+        findViewById(R.id.btn_todo_list_db).setOnClickListener(this);
 
     }
 
@@ -91,6 +92,10 @@ public class MainActivity extends AppCompatActivity
                 break;
             }
 
+            case R.id.btn_todo_list_db : {
+                startActivity(new Intent(this, TodoListDbActivity.class));
+                break;
+            }
         }
     }
 

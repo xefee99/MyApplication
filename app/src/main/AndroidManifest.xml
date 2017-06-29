@@ -21,7 +21,8 @@
         <activity android:name=".SimpleListActivity" />
         <activity android:name=".TodoListActivity" />
         <activity android:name=".TodoAddActivity" />
-        <activity android:name=".TodoDetailActivity"></activity>
+        <activity android:name=".TodoDetailActivity" />
+        <activity android:name=".TodoListDbActivity"></activity>
     </application>
 
 </manifest>

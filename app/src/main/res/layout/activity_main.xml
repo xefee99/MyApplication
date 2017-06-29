@@ -40,5 +40,11 @@
         android:layout_height="wrap_content"
         android:text="TODO 리스트"/>
 
+    <Button
+        android:id="@+id/btn_todo_list_db"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TODO 리스트 - DB"/>
+
 
 </LinearLayout>

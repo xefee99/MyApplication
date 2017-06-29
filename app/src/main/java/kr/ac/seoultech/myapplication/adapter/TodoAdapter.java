@@ -75,4 +75,14 @@ public class TodoAdapter extends BaseAdapter {
         notifyDataSetChanged();
     }
 
+    public void removeItem(int index) {
+        this.items.remove(index);
+        notifyDataSetChanged();
+    }
+
+    public void setItems(List<Todo> items) {
+        this.items = items;
+        notifyDataSetChanged();
+    }
+
 }
