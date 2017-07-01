@@ -40,15 +40,29 @@ public class TodoDao {
 
     public void update(Todo todo) {
 
+        ContentValues values = new ContentValues();
+        values.put("title", todo.getTitle());
+        values.put("content", todo.getContent());
+
+        String whereClause = "_id = ?";
+        String[] whereArgs = new String[]{ String.valueOf(todo.getId()) };
+
+//        String idStr = String.valueOf(todo.getId());
+//        String[] whereArgs = new String[1];
+//        whereArgs[0] = idStr;
+
+        db.update("tb_todo", values, whereClause, whereArgs);
     }
 
     public void delete(Long id) {
+        String whereClause = "_id = ?";
+        String[] whereArgs = new String[]{ String.valueOf(id) };
 
+        db.delete("tb_todo", whereClause, whereArgs);
     }
 
     public Todo select(Long id) {
-
-        return null;
+        throw new RuntimeException("not implemented");
     }
 
     public List<Todo> selectList() {

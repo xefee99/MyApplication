@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="kr.ac.seoultech.myapplication">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -22,7 +24,8 @@
         <activity android:name=".TodoListActivity" />
         <activity android:name=".TodoAddActivity" />
         <activity android:name=".TodoDetailActivity" />
-        <activity android:name=".TodoListDbActivity"></activity>
+        <activity android:name=".TodoListDbActivity" />
+        <activity android:name=".HttpImageActivity"></activity>
     </application>
 
 </manifest>

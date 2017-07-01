@@ -46,5 +46,11 @@
         android:layout_height="wrap_content"
         android:text="TODO 리스트 - DB"/>
 
+    <Button
+        android:id="@+id/btn_http_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="HTTP 이미지 다운로드"/>
+
 
 </LinearLayout>

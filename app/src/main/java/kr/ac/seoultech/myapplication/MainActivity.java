@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity
         findViewById(R.id.btn_simple_list).setOnClickListener(this);
         findViewById(R.id.btn_todo_list).setOnClickListener(this);
         findViewById(R.id.btn_todo_list_db).setOnClickListener(this);
+        findViewById(R.id.btn_http_image).setOnClickListener(this);
 
     }
 
@@ -94,6 +95,10 @@ public class MainActivity extends AppCompatActivity
 
             case R.id.btn_todo_list_db : {
                 startActivity(new Intent(this, TodoListDbActivity.class));
+                break;
+            }
+            case R.id.btn_http_image : {
+                startActivity(new Intent(this, HttpImageActivity.class));
                 break;
             }
         }
